@@ -13,6 +13,7 @@ Then you declare a particular scenario of facts and hand them to the rules engin
 
 I've just hardcoded the rules and the declaration of facts straight in python.  But one could imagine reading those in more dynamically from a file or a database or a Google Sheet that building engineers maintain themselves, instead, which would achieve the goal of giving building experts more direct control.  
 
+Also, the rules just print out a recommendation, like "Electrify HVAC".  But, because they're just Python methods, one could imagine them doing all kinds of things, like calling an API or adding records to a database, or just about anything.
 
 
 To run this, do these two on a command line:
