@@ -3,11 +3,11 @@ This example uses an "expert systems" library in Python to encode a bunch of bus
 
 This particular example uses a library called "experta" which, unfortunately, doesn't appear to be actively maintained: https://github.com/nilp0inter/experta.  That's not the end of the world because there are other libraries.  Experta is LGPL and so couldn't be used in commercial software, anyway.  But I thought its syntax was usefule for illustrating the general concept. There are other libraries, too, especially Drools in Java.
 
-The general idea is that you encode a universe of "things you can say about things" in terms of a bunch of "facts" classes, which I've done in [lib/facts.py].
+The general idea is that you encode a universe of "things you can say about things" in terms of a bunch of "facts" classes, which I've done in https://github.com/trcull/building_expert/blob/main/lib/facts.py.
 
-Then you encode a bunch of independent "rules" that are just annotated python methods that, essentially, say "when this and this and this are true, then run me", which I've done in [lib/rules.py].
+Then you encode a bunch of independent "rules" that are just annotated python methods that, essentially, say "when this and this and this are true, then run me", which I've done in https://github.com/trcull/building_expert/blob/main/lib/rules.py.
 
-Then you declare a particular scenario of facts and hand them to the rules engine and ask it, basically, "what should I do given this particular scenario?" which I've done in [lib/supervisor.py] with a handful of scenarios.
+Then you declare a particular scenario of facts and hand them to the rules engine and ask it, basically, "what should I do given this particular scenario?" which I've done in https://github.com/trcull/building_expert/blob/main/lib/supervisor.py with a handful of scenarios.
 
 To run this, do these two on a command line:
  ```
